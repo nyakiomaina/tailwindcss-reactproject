@@ -1,4 +1,5 @@
 //import React, {useState} from 'react';
+import { render } from "@testing-library/react";
 import React, { component } from "react";
 
 //const ImageSearch = ({ searchText }) => {
@@ -7,7 +8,7 @@ import React, { component } from "react";
  class ImageSearch extends Component {
      state = {text: ""}
 
- }
+ 
    // const onSubmit = (e) => {
   //      e.preventDefault();
   //      searchText(text);
@@ -22,7 +23,7 @@ import React, { component } from "react";
       event.preventDefault();
       searchText(text);
   }
-     
+render() { 
     return (
         <div className="max-w-sm rounded overflow-hidden my-10 mx-auto">
             <form onSubmit={this.onSubmit}//{onSubmit}
@@ -39,6 +40,7 @@ import React, { component } from "react";
             </form>
         </div>
     )
-//}
+}
+ }
 
 export default ImageSearch;
