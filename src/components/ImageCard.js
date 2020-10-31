@@ -1,8 +1,12 @@
-import React from 'react';
+//import React from 'react';
+import React, { component } from "react";
 
-const ImageCard = ( {image}) => {
-    const tags = image.tags.split(',')
+//const ImageCard = ( {image}) => {
+ //   const tags = image.tags.split(',')
 
+ class ImageCard extends component {
+     tags = image.tags.split(',')
+ }
     return (
         <div className="max-w-sm rounded overflow-hidden shadow-lg">
         <img src={image.webformatURL} alt = "" className="w-full"/>
@@ -32,6 +36,6 @@ const ImageCard = ( {image}) => {
         </div>
     </div>
     )
-}
+//}
 
 export default ImageCard;
