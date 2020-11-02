@@ -1,19 +1,8 @@
-//import React, {useState} from 'react';
 import { render } from "@testing-library/react";
 import React, { component } from "react";
 
-//const ImageSearch = ({ searchText }) => {
- //   const [text, setText] = useState('');
-
  class ImageSearch extends Component {
      state = {text: ""}
-
- 
-   // const onSubmit = (e) => {
-  //      e.preventDefault();
-  //      searchText(text);
-
-  //  }
 
   setText = (event) => {
       this.setState({text: event.target.value})

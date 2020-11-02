@@ -1,9 +1,5 @@
-//import React from 'react';
 import { render } from "@testing-library/react";
-import React, { component } from "react";
-
-//const ImageCard = ( {image}) => {
- //   const tags = image.tags.split(',')
+import React, { component } from "react"
 
  class ImageCard extends component {
      tags = image.tags.split(',')
